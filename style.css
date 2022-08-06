@@ -1,0 +1,55 @@
+html {
+    background-color: black;
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    margin: 100% 2.5% 0 2.5%;
+}
+
+p {
+    background-color: rgb(34, 31, 31);
+    color: rgb(5, 4, 4);
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.column-two {
+    margin-top: calc(100% - 90px);
+}
+
+.dim-grey {
+    background-color: dimgrey;
+    color: black;
+}
+
+.orange {
+    background-color: orange;
+    color: white;
+}
+
+@media (min-width: 500px) {
+    div {
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }    
+}
+ 
+@media (min-width: 700px) {
+    div {
+        margin-right: 6vw;
+        margin-left: 6vw;
+    }
+}
