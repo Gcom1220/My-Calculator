@@ -18,7 +18,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 2rem 2rem;
 }
 
 
@@ -28,7 +28,7 @@ p {
     height: 2rem;
     width: 2rem;
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     border-radius: 50%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
@@ -56,5 +56,12 @@ p {
 
     div {
         margin: 2rem 2rem;
+    }
+
+    p {
+        height: 1.5rem;
+        width: 1.5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
     }
 }
