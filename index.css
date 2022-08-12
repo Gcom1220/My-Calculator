@@ -68,3 +68,10 @@ p {
         margin: .85rem;
     }
 }
+
+@media screen and (max-height: 350px) {
+    p {
+        margin: .6rem;
+        padding: 1.8rem;
+    }
+}
