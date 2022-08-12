@@ -6,28 +6,39 @@
 
 html {
     background-color: black;
-    overflow: hidden;
-}
-
-body {
     height: 100vh;
 }
 
+body {
+}
+
+
+.screen {
+    position: relative;
+    height: 100vh;
+
+}
 .container {
-    height: 100%;
+    /* height: 100vh; */
     display: flex;
-    align-items: flex-end;
+    /* -ms-flex-align: end; */
+    /* align-items: flex-end; */
+    position: absolute;
+    width: 100%;
+    bottom: 0 !important;
+    left: 0;
+    right: 0;
     justify-content: space-between;
-    padding: 2rem 2rem;
+    padding: 0 .8rem;
 }
 
 
 p {
     background-color: rgb(34, 31, 31);
     color: white;
-    height: 2rem;
-    width: 2rem;
-    padding: 2rem;
+    height: 25px;
+    width: 25px;
+    padding: 1.5rem;
     margin: 2rem 0;
     border-radius: 50%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -51,13 +62,15 @@ p {
     .container{
        justify-content: space-between;
        max-width: 600px;
-       margin: 0 auto;
+       /* padding-bottom: 5%; */
+       margin-left: 3rem;
     }
 
     p {
-        height: 1.5rem;
-        width: 1.5rem;
-        padding: 1.5rem;
-        margin: 1.5rem 0;
+        height: 35px;
+        width: 35px;
+        padding: 2rem;
     }
 }
+
+
