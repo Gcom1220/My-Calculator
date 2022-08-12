@@ -45,17 +45,13 @@ p {
     background-color: orange;
     color: white;
 }
+
  
 @media (min-width: 800px) {
     .container{
-       justify-content: left;
-        align-items: center;
-        margin: 0;
-        padding: 1rem;
-    }
-
-    div {
-        margin: 2rem 2rem;
+       justify-content: space-between;
+       max-width: 600px;
+       margin: 0 auto;
     }
 
     p {
