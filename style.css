@@ -5,30 +5,25 @@
 }
 
 html {
+    min-height: 100vh;
+    width: 100vw;
+}
+  
+body {
+    min-height: 100%;
     background-color: black;
-    height: 100vh;
+    /* width: 100vw; */
 }
 
-.screen {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-.container {
-    /* height: 100vh; */
-    display: flex;
-    /* -ms-flex-align: end; */
-    /* align-items: flex-end; */
-    position: absolute;
-    width: 100%;
-    bottom: 20%;
-    left: 0;
-    right: 0;
-    justify-content: space-between;
+#display {
+    height: 100px;
+    font-size: xx-large;
+    text-align: right;
+    color: white;
+    background-color: black;
 }
 
-
-p {
+.button {
     background-color: rgb(34, 31, 31);
     color: white;
     height: 25px;
@@ -36,36 +31,39 @@ p {
     padding: 2rem;
     margin: 2rem 0;
     border-radius: 50%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.dim-grey {
+.screen {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    padding: 25px 50px 25px 50px;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#dim-grey {
     background-color: dimgrey;
     color: black;
-}
-
-.orange {
+  }
+  
+#orange {
     background-color: orange;
     color: white;
+  }
+
+@media (max-width:450px) {
+    .screen {
+        padding: 25px;
+    }    
 }
-
- 
-@media (min-width: 800px) {
-    .container{
-       justify-content: space-between;
-       max-width: 600px;
-       /* padding-bottom: 5%; */
-       margin-left: 2rem;
-    }
-
-    p {
-        height: 35px;
-        width: 35px;
-        padding: 2rem;
-    }
-}
-
-

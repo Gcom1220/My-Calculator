@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  width: 100%;
   min-height: 100%;
   background-color: black;
 }
@@ -17,14 +18,14 @@ body {
   display: flex;
   position: absolute;
   width: 100%;
-  bottom: 0%;
+  bottom: 0;
   left: 0;
   right: 0;
   justify-content: space-between;
   padding: 0 4px;
 }
 
-p {
+button {
   background-color: rgb(34, 31, 31);
   color: white;
   height: 25px;
@@ -48,6 +49,11 @@ p {
   color: white;
 }
 
+input {
+  height: auto;
+  width: auto;
+}
+
 @media (min-width: 800px) {
   .container {
     justify-content: space-between;
@@ -55,7 +61,7 @@ p {
     margin-left: 2rem;
   }
 
-  p {
+  button {
     height: 35px;
     width: 35px;
     padding: 2rem;
@@ -64,15 +70,15 @@ p {
 
 
 @media screen and (max-height: 600px) {
-    p {
+    button {
         margin: .85rem;
     }
 }
 
-@media screen and (max-height: 350px) {
-    p {
+@media screen and (max-height: 400px) {
+    button {
         margin: .6rem;
-        padding: 1.6rem;
+        padding: 1.5rem;
     }
 
     .container {
