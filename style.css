@@ -45,7 +45,7 @@ body {
 
 .screen {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    padding: 25px 50px 25px 50px;
+    padding: 25px 50px;
     min-height:100vh;
     display: flex;
     flex-direction: column;
@@ -64,6 +64,6 @@ body {
 
 @media (max-width:450px) {
     .screen {
-        padding: 25px;
+        padding: 50px 25px;
     }    
 }
