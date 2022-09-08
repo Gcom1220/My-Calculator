@@ -18,6 +18,9 @@ buttons.map( button => {
             case 'X²':
                 display.innerText = eval(display.innerText*display.innerText);
                 break;
+            case '%':
+                display.innerText = eval(display.innerText/100);
+                break;
             case '+/-':
                 display.innerText += '-';
                 break;
