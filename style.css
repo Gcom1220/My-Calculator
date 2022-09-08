@@ -64,6 +64,6 @@ body {
 
 @media (max-width:450px) {
     .screen {
-        padding: 50px 25px;
+        padding: 100px 25px;
     }    
 }
